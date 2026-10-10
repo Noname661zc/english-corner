@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0e1c4d">
+<meta name="description" content="理工英语角 · 诚挚邀请您的到来">
+<title>理工英语角 · 邀请函</title>
+
+<!-- ===== 微信 / QQ 分享卡片 =====
+     部署好之后，把下面几个 https://Noname661zc.github.io/english-corner/ 换成你的真实网址（一共 4 处），
+     别人在微信里转发这个链接时，才会显示标题、描述和缩略图；不填就只有一条干链接。 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="理工英语角 · 诚挚邀请您的到来">
+<meta property="og:description" content="上滑翻页，看看我们的英语角：热场小游戏、英文情景剧、精彩上秀、神秘嘉宾。">
+<meta property="og:image" content="https://Noname661zc.github.io/english-corner/share-thumb.jpg">
+<meta property="og:image:secure_url" content="https://Noname661zc.github.io/english-corner/share-thumb.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="理工英语角 · 邀请函">
+<meta property="og:url" content="https://Noname661zc.github.io/english-corner/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="理工英语角 · 诚挚邀请您的到来">
+<meta name="twitter:description" content="上滑翻页，看看我们的英语角。">
+<meta name="twitter:image" content="https://Noname661zc.github.io/english-corner/share-thumb.jpg">
+<!-- 微信有时读的是这几条旧协议，一并写上 -->
+<meta itemprop="name" content="理工英语角 · 诚挚邀请您的到来">
+<meta itemprop="description" content="上滑翻页，看看我们的英语角。">
+<meta itemprop="image" content="https://Noname661zc.github.io/english-corner/share-thumb.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#eaf2ff;
+  --ink-soft:#c3d6f6;
+  --blue:#5aa9ff;
+  --blue-soft:#8fc7ff;
+  --gold:#ffd76a;
+  --card:rgba(233,241,255,.90);
+  --card-line:rgba(255,255,255,.55);
+  --letter-ink:#24407e;
+  --font-script:'Great Vibes','Segoe Script','Brush Script MT',cursive;
+  --font-serif:'Playfair Display',Georgia,'Times New Roman',serif;
+  --font-cn:'PingFang SC','Microsoft YaHei','Hiragino Sans GB','Source Han Sans SC',sans-serif;
+  --font-brush:'STXingkai','FZSTK','华文行楷','KaiTi','STKaiti','楷体',serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden}
+body{
+  font-family:var(--font-cn);
+  color:var(--ink);
+  background:#0b1740;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+body.hide-cn-chrome .cn-status{display:none}
+body.hide-cn-chrome .cn-status .cn-music{
+  display:flex;position:fixed;right:14px;top:calc(14px + env(safe-area-inset-top));
+  bottom:auto;z-index:70;
+}
+
+/* ============ 顶部“文章页”样式外壳（可在 config 里关闭） ============ */
+.cn-status{
+  position:fixed;inset:0 0 auto 0;z-index:60;
+  height:calc(88px + env(safe-area-inset-top));
+  padding-top:env(safe-area-inset-top);
+  display:flex;align-items:center;gap:10px;padding-inline:14px;
+  background:linear-gradient(#0a1436,#0b1740);
+  box-shadow:0 6px 20px rgba(0,0,0,.35);
+  backdrop-filter:blur(6px);
+}
+.cn-status .cn-back{
+  width:34px;height:34px;flex:0 0 34px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(255,255,255,.35);color:#dfe9ff;font-size:17px;line-height:1;
+  background:rgba(255,255,255,.06);
+}
+.cn-status .cn-title{
+  flex:1;text-align:center;font-size:16px;font-weight:600;color:#f2f6ff;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.cn-status .cn-title small{display:block;font-weight:400;font-size:10.5px;color:#9fb6e6;letter-spacing:.06em;margin-top:1px}
+.cn-status .cn-more{width:34px;flex:0 0 34px;text-align:center;color:#dfe9ff;font-size:18px;letter-spacing:.08em}
+.cn-status .cn-music{
+  position:absolute;right:10px;bottom:-52px;
+  width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(255,255,255,.45);
+  background:rgba(12,24,60,.55);backdrop-filter:blur(8px);
+  color:#eaf2ff;font-size:19px;cursor:pointer;
+  box-shadow:0 4px 16px rgba(0,0,0,.3);
+  transition:transform .25s ease,background .25s ease;
+}
+.cn-status .cn-music:active{transform:scale(.92)}
+.cn-status .cn-music .note{display:inline-block}
+.cn-status .cn-music:not(.playing) .note{animation:none;opacity:.62}
+.cn-status .cn-music.playing .note{animation:spin 4.2s linear infinite}
+.cn-status .cn-music .slash{
+  position:absolute;width:26px;height:2px;border-radius:2px;background:#ff8f8f;
+  transform:rotate(-45deg);opacity:0;transition:opacity .2s ease;
+}
+.cn-status .cn-music:not(.playing) .slash{opacity:1}
+.cn-status .cn-music.playing{background:rgba(90,169,255,.35);border-color:rgba(255,255,255,.75)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ============ 翻页容器 ============ */
+#pages{
+  height:100%;
+  overflow-y:scroll;
+  scroll-snap-type:y mandatory;
+  scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+  overscroll-behavior-y:contain;
+}
+#pages::-webkit-scrollbar{width:0;height:0}
+body.show-cn-chrome #pages{scroll-padding-top:calc(88px + env(safe-area-inset-top))}
+
+.page{
+  position:relative;
+  height:100svh;
+  min-height:100svh;
+  scroll-snap-align:start;
+  scroll-snap-stop:always;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:96px 22px 118px;
+  overflow:hidden;
+  isolation:isolate;
+}
+body.hide-cn-chrome .page{padding-top:64px}
+.page::before{ /* 每页背景渐变 */
+  content:'';position:absolute;inset:0;z-index:-3;
+  background:
+    radial-gradient(120% 80% at 12% 0%,rgba(90,169,255,.30),transparent 60%),
+    radial-gradient(120% 90% at 100% 100%,rgba(255,183,94,.14),transparent 62%),
+    linear-gradient(165deg,#132a6b 0%,#0f2058 45%,#0a1436 100%);
+}
+.page::after{ /* 星点 */
+  content:'';position:absolute;inset:0;z-index:-2;opacity:.75;
+  background-image:
+    radial-gradient(1.6px 1.6px at 20% 18%,#fff,transparent),
+    radial-gradient(1.4px 1.4px at 78% 12%,#ffe9a8,transparent),
+    radial-gradient(1.8px 1.8px at 62% 32%,#cfe4ff,transparent),
+    radial-gradient(1.3px 1.3px at 12% 52%,#fff,transparent),
+    radial-gradient(1.6px 1.6px at 88% 62%,#ffe9a8,transparent),
+    radial-gradient(1.4px 1.4px at 34% 78%,#fff,transparent),
+    radial-gradient(1.7px 1.7px at 70% 88%,#cfe4ff,transparent),
+    radial-gradient(1.2px 1.2px at 46% 8%,#fff,transparent);
+  animation:twinkle 5.5s ease-in-out infinite alternate;
+}
+@keyframes twinkle{from{opacity:.35}to{opacity:.95}}
+
+/* 飘浮的星星 / 装饰 */
+.floaties{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.floaties i{
+  position:absolute;display:block;
+  font-style:normal;line-height:1;opacity:.9;
+  animation:floaty 7s ease-in-out infinite alternate;
+  filter:drop-shadow(0 0 6px rgba(255,220,140,.45));
+}
+@keyframes floaty{
+  from{transform:translateY(-10px) rotate(-8deg) scale(.94)}
+  to{transform:translateY(12px) rotate(10deg) scale(1.06)}
+}
+
+/* ============ 内容入场动画 ============ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,.9,.28,1),transform .8s cubic-bezier(.22,.9,.28,1)}
+.page.active .reveal{opacity:1;transform:none}
+.page.active .reveal:nth-child(1){transition-delay:.05s}
+.page.active .reveal:nth-child(2){transition-delay:.16s}
+.page.active .reveal:nth-child(3){transition-delay:.27s}
+.page.active .reveal:nth-child(4){transition-delay:.38s}
+.page.active .reveal:nth-child(5){transition-delay:.49s}
+.page.active .reveal:nth-child(6){transition-delay:.6s}
+
+/* ============ 通用排版 ============ */
+.eyebrow{
+  font-family:var(--font-serif);font-style:italic;letter-spacing:.22em;
+  font-size:12.5px;color:var(--blue-soft);text-transform:uppercase;margin-bottom:10px;
+}
+.h-cn{
+  font-family:var(--font-brush);font-weight:400;
+  font-size:clamp(30px,10vw,44px);line-height:1.15;
+  color:#eaf3ff;text-shadow:0 4px 24px rgba(90,169,255,.45),0 1px 0 rgba(255,255,255,.25);
+  letter-spacing:.04em;
+}
+.script{font-family:var(--font-script);color:#fff;line-height:1.1}
+.rule{width:64px;height:3px;border-radius:3px;margin:14px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+
+.title-svg{width:min(88vw,420px);height:auto;display:block;margin:0 auto;overflow:visible}
+.title-svg text{
+  font-family:var(--font-script);
+  fill:#fff;
+  font-size:66px;
+}
+.title-svg .halo{filter:drop-shadow(0 6px 20px rgba(120,180,255,.55))}
+
+/* ============ 卡片 / 信纸 ============ */
+.card{
+  position:relative;width:100%;max-width:520px;
+  border-radius:22px;
+  background:linear-gradient(160deg,rgba(240,246,255,.96),rgba(219,232,252,.92));
+  color:var(--letter-ink);
+  border:1px solid var(--card-line);
+  box-shadow:0 18px 50px rgba(3,10,32,.5),inset 0 1px 0 rgba(255,255,255,.9);
+  padding:26px 20px;
+  position:relative;
+  z-index:2;
+}
+.card.dark{
+  background:linear-gradient(160deg,rgba(24,48,110,.72),rgba(12,26,66,.72));
+  color:var(--ink);border-color:rgba(255,255,255,.22);
+  backdrop-filter:blur(5px);
+  box-shadow:0 18px 50px rgba(3,10,32,.45),inset 0 1px 0 rgba(255,255,255,.16);
+}
+.tape{
+  position:absolute;top:-12px;left:50%;transform:translateX(-50%) rotate(-2deg);
+  width:104px;height:26px;border-radius:3px;
+  background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(210,228,255,.38));
+  border:1px solid rgba(255,255,255,.5);box-shadow:0 3px 10px rgba(0,0,0,.18);
+}
+.badge{
+  display:inline-block;padding:9px 30px;border-radius:999px;
+  border:2px solid #fff;color:#fff;
+  font-family:var(--font-serif);font-weight:700;letter-spacing:.22em;
+  font-size:clamp(16px,5.2vw,21px);
+  background:rgba(255,255,255,.10);
+  box-shadow:0 8px 26px rgba(4,12,36,.35),inset 0 0 22px rgba(255,255,255,.14);
+}
+
+/* ============ 首页 ============ */
+.cover{text-align:center}
+.cover .hairline{width:1px;height:52px;margin:22px auto 0;background:linear-gradient(180deg,rgba(255,255,255,.65),transparent)}
+.cover h2{
+  font-size:clamp(20px,6.4vw,26px);font-weight:600;letter-spacing:.06em;
+  margin-top:16px;color:#fff;text-shadow:0 6px 26px rgba(10,22,60,.6);
+}
+.cover .sub{margin-top:8px;font-size:13.5px;color:#bcd2f6;letter-spacing:.12em}
+.pill-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+.pill{
+  padding:7px 15px;border-radius:999px;font-size:12.5px;letter-spacing:.06em;
+  border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.10);color:#e7f0ff;
+  backdrop-filter:blur(3px);
+}
+.pill.gold{border-color:rgba(255,215,106,.7);color:#ffe6a3;background:rgba(255,215,106,.12)}
+
+/* 上滑提示 */
+.swipe-hint{
+  position:absolute;bottom:calc(24px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:7px;
+  color:#dce8ff;font-size:12px;letter-spacing:.28em;
+  animation:bob 2.1s ease-in-out infinite;z-index:5;
+}
+.swipe-hint .chev{width:20px;height:20px;border-right:2px solid #dce8ff;border-bottom:2px solid #dce8ff;transform:rotate(-135deg);opacity:.95;border-radius:2px}
+.swipe-hint .chev:nth-child(3){opacity:.45;transform:rotate(-135deg) translate(-3px,-3px)}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,-9px)}}
+
+/* ============ 邀请函正文 ============ */
+.letter{font-size:15.5px;line-height:2.05;letter-spacing:.02em}
+.letter .dear{font-weight:700;color:#1b3a7d;font-size:16.5px}
+.letter p{margin-top:14px;text-indent:0}
+.letter p + p{margin-top:12px}
+.letter .hi{color:#2f5fd0;font-weight:600}
+.letter .sign{margin-top:22px;text-align:right;font-size:14.5px;color:#22406f;line-height:1.9}
+.letter .sign b{font-weight:700;letter-spacing:.04em}
+.letter .stamp{
+  display:inline-block;margin-top:10px;padding:5px 12px;border-radius:8px;
+  border:1.5px dashed rgba(47,95,208,.6);color:#2f5fd0;font-size:12.5px;letter-spacing:.1em;
+}
+
+/* ============ 内容清单 ============ */
+.list{display:flex;flex-direction:column;gap:12px;width:100%;max-width:520px}
+.item{
+  display:flex;align-items:center;gap:14px;
+  padding:15px 16px;border-radius:16px;
+  background:linear-gradient(120deg,rgba(255,255,255,.16),rgba(255,255,255,.06));
+  border:1px solid rgba(255,255,255,.24);
+  backdrop-filter:blur(4px);
+  box-shadow:0 10px 30px rgba(3,10,32,.32);
+  transition:transform .3s ease,border-color .3s ease;
+}
+.item:active{transform:scale(.985)}
+.item .num{
+  flex:0 0 38px;height:38px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-serif);font-weight:700;font-size:17px;color:#0e1c4d;
+  background:linear-gradient(150deg,#ffe9a8,#ffc46b);
+  box-shadow:0 6px 16px rgba(255,180,80,.35);
+}
+.item .t{font-size:16px;font-weight:600;letter-spacing:.03em}
+.item .d{font-size:12px;color:#b9cdf1;margin-top:3px;letter-spacing:.04em}
+.script-foot{margin-top:24px;font-size:clamp(26px,9vw,40px);text-align:center;opacity:.95}
+
+/* ============ 往期回顾 · 胶片相册 ============ */
+.rail{
+  display:flex;gap:16px;overflow-x:auto;overscroll-behavior-x:contain;
+  scroll-snap-type:x mandatory;margin:0 -22px;padding:10px 22px 20px;
+  scrollbar-width:none;align-items:flex-start;
+}
+.rail::-webkit-scrollbar{display:none}
+.fr{
+  position:relative;flex:0 0 auto;scroll-snap-align:center;
+  width:66vw;max-width:266px;padding:9px;
+  border-radius:8px;background:linear-gradient(170deg,#20305c,#0a1230);
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 18px 40px rgba(2,7,24,.55),inset 0 1px 0 rgba(255,255,255,.14);
+}
+.fr.wide{width:84vw;max-width:340px}
+.fr.a{transform:rotate(-1.4deg)}
+.fr.b{transform:rotate(1.2deg)}
+.fr.c{transform:rotate(-0.6deg)}
+.fr .win{position:relative;aspect-ratio:3/2;border-radius:4px;overflow:hidden;background:#0d1738}
+.fr .win img{width:100%;height:100%;object-fit:cover;display:block}
+.fr .win::after{
+  content:'';position:absolute;left:0;right:0;top:0;height:7px;opacity:.5;
+  background:repeating-linear-gradient(90deg,transparent 0 8px,rgba(255,255,255,.5) 8px 15px);
+}
+.fr .no{
+  position:absolute;top:14px;left:14px;z-index:2;
+  font-family:var(--font-serif);font-size:11px;letter-spacing:.12em;
+  padding:2px 8px;border-radius:999px;color:#fff;
+  background:rgba(6,12,32,.55);backdrop-filter:blur(3px);
+}
+.fr .mini{
+  margin-top:9px;font-size:11.5px;letter-spacing:.06em;color:#b9cdf1;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.fr.wide .mini{color:#e2ecff}
+.rail-wrap{position:relative;width:100%;max-width:560px}
+.rail-cap{
+  text-align:center;font-size:11.5px;color:#a9c2ee;letter-spacing:.16em;margin-top:-6px;
+}
+.rail-cap b{color:#ffd76a;font-weight:600}
+
+/* 三张一排的相册条 */
+.strip{
+  display:flex;justify-content:center;align-items:flex-start;gap:10px;
+  width:100%;max-width:560px;
+}
+.strip .fr{width:30vw;max-width:150px;transform:rotate(-1.4deg)}
+.strip .fr:nth-child(2){transform:rotate(.9deg)}
+.strip .fr:nth-child(3){transform:rotate(-.5deg)}
+.strip .fr .win{height:var(--imgh,32vw);aspect-ratio:auto}
+.strip .fr{padding:7px;border-radius:7px}
+.strip .fr .mini{font-size:10px;text-align:center;margin-top:7px}
+.strip .fr .no{font-size:9px;padding:1px 6px;top:11px;left:11px}
+.strip.wide-only .fr{width:62vw;max-width:260px}
+.strip.wide-only .fr .win{height:var(--imgh2,42vw)}
+
+/* 单张大图（合影） */
+.hero-shot{
+  width:88vw;max-width:400px;padding:10px;border-radius:9px;position:relative;
+  background:linear-gradient(170deg,#20305c,#0a1230);
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 20px 46px rgba(2,7,24,.55),inset 0 1px 0 rgba(255,255,255,.14);
+  transform:rotate(-.7deg);
+}
+.hero-shot .win{position:relative;border-radius:5px;overflow:hidden;background:#0d1738}
+.hero-shot .win img{width:100%;height:var(--heroh,42vw);object-fit:cover;display:block}
+.hero-shot .win::after{
+  content:'';position:absolute;inset:auto 0 0 0;height:56%;
+  background:linear-gradient(transparent,rgba(6,14,38,.72));
+}
+.hero-shot .ov{
+  position:absolute;left:20px;right:20px;bottom:16px;z-index:2;text-align:left;
+}
+.hero-shot .ov .s1{font-family:var(--font-script);font-size:clamp(22px,7.4vw,32px);color:#fff;line-height:1.1}
+.hero-shot .ov .s2{font-size:11.5px;color:#d3e2ff;letter-spacing:.14em;margin-top:2px}
+.gal-cap{
+  margin-top:14px;text-align:center;font-size:12px;color:#bcd2f6;letter-spacing:.14em;
+}
+.gal-cap b{color:#ffd76a;font-weight:600}
+
+/* 全景横条照片 */
+.pano{
+  width:88vw;max-width:400px;padding:8px;border-radius:8px;
+  background:linear-gradient(170deg,#20305c,#0a1230);
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 16px 36px rgba(2,7,24,.5);
+  transform:rotate(.5deg);
+}
+.pano .win{position:relative;border-radius:4px;overflow:hidden;background:#0d1738}
+.pano .win img{width:100%;height:clamp(120px,36vw,180px);object-fit:cover;display:block}
+.pano .mini{margin-top:8px;font-size:10.5px;text-align:center;letter-spacing:.1em;color:#b9cdf1}
+
+@media (max-height:700px){
+  .hero-shot .win img{height:36vw}
+  .strip .fr .win{height:27vw}
+  .pano .win img{height:32vw}
+  .pano .mini{display:none}
+}
+
+/* ============ 活动准备 ============ */
+.tips{display:flex;flex-direction:column;gap:12px}
+.tip{
+  display:flex;gap:12px;align-items:flex-start;
+  background:linear-gradient(160deg,rgba(244,248,255,.96),rgba(224,236,254,.94));
+  color:#22406f;border-radius:16px;padding:14px 15px;
+  border:1px solid rgba(255,255,255,.7);
+  box-shadow:0 12px 30px rgba(3,10,32,.35);
+}
+.tip .ico{
+  flex:0 0 30px;height:30px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(150deg,#9ec9ff,#5aa9ff);color:#08214a;font-size:15px;
+  box-shadow:0 5px 14px rgba(90,169,255,.4);
+}
+.tip .tt{font-weight:700;font-size:14.8px;margin-bottom:4px;color:#1b3a7d}
+.tip .td{font-size:13.6px;line-height:1.75;color:#33507f}
+.lead{font-size:14.6px;line-height:1.95;color:var(--ink-soft);text-align:center;margin-bottom:16px;max-width:520px}
+
+/* ============ 信息条 ============ */
+.meta{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.meta .row{display:flex;align-items:center;gap:10px;font-size:14px;color:#eaf2ff}
+.meta .row span:first-child{color:#9fb9ea;min-width:52px;letter-spacing:.08em}
+.meta .row span:last-child{font-weight:600}
+.dots-line{height:1px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.5) 0 6px,transparent 6px 12px);margin:14px 0}
+
+/* ============ 结束页 ============ */
+.final{text-align:center}
+.final .big{font-size:clamp(34px,12vw,58px)}
+.final .cn{
+  font-family:var(--font-brush);font-size:clamp(28px,9.5vw,42px);color:#fff;margin-top:6px;
+  text-shadow:0 6px 30px rgba(90,169,255,.55);
+}
+.final .script2{font-size:clamp(30px,10vw,46px);margin-top:18px}
+.final .small{margin-top:18px;font-size:13px;color:#b6cbf1;letter-spacing:.16em}
+
+/* 礼物盒 */
+.gifts{position:absolute;left:0;right:0;bottom:calc(-6px + env(safe-area-inset-bottom));z-index:-1;display:flex;align-items:flex-end;justify-content:space-around;padding:0 6px;pointer-events:none;opacity:.96}
+.gift{width:18%;max-width:96px;animation:rise .8s ease both}
+.gift svg{width:100%;height:auto;display:block;filter:drop-shadow(0 8px 18px rgba(0,0,0,.3))}
+@keyframes rise{from{transform:translateY(26px);opacity:0}to{transform:none;opacity:1}}
+
+/* 右侧圆点导航 */
+.nav-dots{
+  position:fixed;right:9px;top:50%;transform:translateY(-50%);z-index:58;
+  display:flex;flex-direction:column;gap:9px;padding:8px 5px;border-radius:999px;
+  background:rgba(9,18,46,.35);backdrop-filter:blur(4px);
+}
+.nav-dots button{
+  width:7px;height:7px;border-radius:50%;border:0;padding:0;cursor:pointer;
+  background:rgba(255,255,255,.34);transition:all .3s ease;
+}
+.nav-dots button.on{background:#ffd76a;height:19px;border-radius:5px;box-shadow:0 0 12px rgba(255,215,106,.8)}
+
+/* 分享引导 */
+.share-tip{
+  position:fixed;inset:0;z-index:80;display:none;
+  background:rgba(4,9,26,.86);backdrop-filter:blur(3px);
+  color:#eaf2ff;padding:26px;
+}
+.share-tip.show{display:block;animation:fade .3s ease both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.share-tip .arrow{position:absolute;right:26px;top:14px;font-size:40px;line-height:1;animation:bob2 1.6s infinite}
+@keyframes bob2{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.share-tip h3{margin-top:120px;font-size:20px;letter-spacing:.08em;text-align:center}
+.share-tip p{margin-top:12px;font-size:14px;line-height:2;color:#c2d5f7;text-align:center}
+.share-tip .close{margin:30px auto 0;display:block;padding:11px 30px;border-radius:999px;border:1px solid rgba(255,255,255,.5);background:transparent;color:#eaf2ff;font-size:15px}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body class="show-cn-chrome">
+
+<!-- 顶部仿公众号文章栏（不需要可在 config.js 里关掉） -->
+<header class="cn-status">
+  <div class="cn-back">✕</div>
+  <div class="cn-title">理工英语角<small>v.qijiw.cn</small></div>
+  <div class="cn-more">···</div>
+  <button class="cn-music" id="musicBtn" aria-label="背景音乐开关">
+    <span class="note">♪</span><span class="slash"></span>
+  </button>
+</header>
+
+<main id="pages">
+
+  <!-- ================= 1 封面 ================= -->
+  <section class="page cover" data-title="理工英语角">
+    <div class="floaties">
+      <i style="left:8%;top:16%;font-size:20px;color:#ffd76a;animation-delay:.2s">★</i>
+      <i style="left:86%;top:12%;font-size:15px;color:#fff2c4;animation-delay:1.1s">✦</i>
+      <i style="left:78%;top:68%;font-size:22px;color:#ffd76a;animation-delay:.6s">★</i>
+      <i style="left:14%;top:74%;font-size:14px;color:#dfeaff;animation-delay:1.6s">✦</i>
+      <i style="left:46%;top:6%;font-size:13px;color:#ffe9a8;animation-delay:.9s">★</i>
+    </div>
+
+    <div class="reveal" style="width:100%">
+      <svg class="title-svg" viewBox="0 0 560 150" role="img" aria-label="English Corner">
+        <defs>
+          <linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#dce9ff"/>
+          </linearGradient>
+        </defs>
+        <text class="halo" x="266" y="76" text-anchor="middle" fill="url(#tg)">English Corner</text>
+        <path d="M132 98 q120 16 250 -6" stroke="rgba(255,255,255,.75)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <g transform="translate(452 78) rotate(10)">
+          <circle r="19" cy="-16" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="2"/>
+          <path d="M-3 2 a3.4 3.4 0 1 0 3.4 -3.4 V-14 a1.4 1.4 0 0 1 1.7 -1.4 l7 1.6" stroke="rgba(255,255,255,.95)" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="reveal" style="width:100%">
+      <div class="hairline"></div>
+      <h2>遇见你，遇见更大的世界</h2>
+      <p class="sub">INVITATION · 诚挚邀请您的到来</p>
+      <div class="pill-row">
+        <span class="pill">全程免费</span>
+        <span class="pill">零基础友好</span>
+        <span class="pill gold">敢说就是胜利</span>
+      </div>
+    </div>
+
+    <div class="swipe-hint" id="swipeHint">
+      <span>上滑翻页</span>
+      <span class="chev"></span>
+      <span class="chev"></span>
+    </div>
+  </section>
+
+  <!-- ================= 2 邀请函 ================= -->
+  <section class="page" data-title="邀请函">
+    <div class="floaties">
+      <i style="left:9%;top:14%;font-size:18px;color:#ffd76a">★</i>
+      <i style="left:84%;top:22%;font-size:14px;color:#dfeaff;animation-delay:1.3s">✦</i>
+      <i style="left:11%;top:70%;font-size:16px;color:#ffe9a8;animation-delay:.7s">★</i>
+      <i style="left:88%;top:80%;font-size:20px;color:#ffd76a;animation-delay:1.8s">★</i>
+    </div>
+
+    <div class="reveal" style="width:100%;max-width:520px;text-align:center;margin-bottom:16px">
+      <span class="badge">INVITATION</span>
+    </div>
+
+    <div class="card reveal">
+      <span class="tape"></span>
+      <div class="letter">
+        <p class="dear">亲爱的伙伴们：</p>
+        <p>时光正好，不如一起赴一场语言之约～</p>
+        <p>我们的「<span class="hi">English Corner</span>」即将温暖开启。在这里，不用害怕开口，不用纠结语法：你可以和伙伴们畅聊生活、分享趣事，在轻松的氛围里慢慢解锁流利表达的快乐。</p>
+        <p>期待在这个充满烟火气的角落，遇见每一个愿意勇敢表达的你。让我们一起用英语，看见更广阔的世界。</p>
+        <p class="sign">
+          —— 英语角筹备组<br>
+          <span class="stamp">期待与你的相遇</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3 英语角内容 ================= -->
+  <section class="page" data-title="英语角内容">
+    <div class="floaties">
+      <i style="left:88%;top:16%;font-size:17px;color:#ffd76a">★</i>
+      <i style="left:8%;top:26%;font-size:13px;color:#dfeaff;animation-delay:.9s">✦</i>
+      <i style="left:78%;top:76%;font-size:15px;color:#ffe9a8;animation-delay:1.5s">★</i>
+    </div>
+
+    <div class="reveal" style="text-align:center;margin-bottom:20px">
+      <div class="eyebrow">What's inside</div>
+      <h2 class="h-cn">英语角内容</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="list">
+      <div class="item reveal"><div class="num">1</div><div><div class="t">热场小游戏</div><div class="d">Ice-breaking games</div></div></div>
+      <div class="item reveal"><div class="num">2</div><div><div class="t">英文情景剧教学</div><div class="d">Situational drama class</div></div></div>
+      <div class="item reveal"><div class="num">3</div><div><div class="t">精彩上秀</div><div class="d">Show time</div></div></div>
+      <div class="item reveal"><div class="num">4</div><div><div class="t">神秘嘉宾分享</div><div class="d">Mystery guest sharing</div></div></div>
+    </div>
+
+    <div class="reveal script script-foot">English Learning</div>
+  </section>
+
+  <!-- ================= 4 往期回顾（照片墙） ================= -->
+  <section class="page" data-title="往期回顾">
+    <div class="floaties">
+      <i style="left:7%;top:9%;font-size:16px;color:#ffd76a">★</i>
+      <i style="left:90%;top:15%;font-size:20px;color:#ffe9a8;animation-delay:1s">★</i>
+      <i style="left:5%;top:88%;font-size:14px;color:#dfeaff;animation-delay:.5s">✦</i>
+      <i style="left:92%;top:80%;font-size:15px;color:#ffd76a;animation-delay:1.7s">★</i>
+    </div>
+
+    <div class="reveal hero-shot">
+      <div class="win"><img src="photos/ec-01-classroom.jpg" alt="英语角大合照"></div>
+      <div class="ov">
+        <div class="s1">Welcome to</div>
+        <div class="s2">我们的英语角 · 往期合影</div>
+      </div>
+    </div>
+
+    <div class="reveal strip" style="margin-top:16px">
+        <figure class="fr a">
+          <div class="win"><img src="photos/ec-07-stage.jpg" alt="英语角活动现场" loading="lazy"></div>
+          <span class="no">07</span>
+          <figcaption class="mini">上台分享的时刻</figcaption>
+        </figure>
+        <figure class="fr b">
+          <div class="win"><img src="photos/ec-08-heart.jpg" alt="英语角活动现场" loading="lazy"></div>
+          <span class="no">08</span>
+          <figcaption class="mini">比心六人组</figcaption>
+        </figure>
+        <figure class="fr c">
+          <div class="win"><img src="photos/ec-11-hands.jpg" alt="英语角活动现场" loading="lazy"></div>
+          <span class="no">11</span>
+          <figcaption class="mini">一起比个手势</figcaption>
+        </figure>
+    </div>
+
+    <div class="reveal gal-cap">左右滑动 · 相册共 <b>11</b> 张照片</div>
+  </section>
+
+  <!-- ================= 5 往期回顾 · 户外的我们 ================= -->
+  <section class="page" data-title="往期回顾 · 户外">
+    <div class="floaties">
+      <i style="left:9%;top:12%;font-size:18px;color:#ffd76a">★</i>
+      <i style="left:88%;top:20%;font-size:14px;color:#dfeaff;animation-delay:1.2s">✦</i>
+      <i style="left:6%;top:84%;font-size:15px;color:#ffe9a8;animation-delay:.7s">★</i>
+    </div>
+
+    <div class="reveal" style="text-align:center;margin-bottom:16px">
+      <div class="eyebrow">Throwback · 02</div>
+      <h2 class="h-cn">把英语角开到了室外</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="reveal strip">
+        <figure class="fr a">
+          <div class="win"><img src="photos/ec-09-lake.jpg" alt="湖边的英语角" loading="lazy"></div>
+          <span class="no">09</span>
+          <figcaption class="mini">湖边的合影</figcaption>
+        </figure>
+        <figure class="fr b">
+          <div class="win"><img src="photos/ec-02-playground.jpg" alt="操场上的英语角" loading="lazy"></div>
+          <span class="no">02</span>
+          <figcaption class="mini">操场上的相聚</figcaption>
+        </figure>
+        <figure class="fr c">
+          <div class="win"><img src="photos/ec-04-blackboard.jpg" alt="教室里的英语角" loading="lazy"></div>
+          <span class="no">04</span>
+          <figcaption class="mini">黑板前的大合照</figcaption>
+        </figure>
+    </div>
+
+    <div class="reveal pano" style="margin-top:14px">
+      <div class="win"><img src="photos/ec-10-boardwalk.jpg" alt="湖边栈道上的英语角合影" loading="lazy"></div>
+      <div class="mini">湖边栈道 · 全景合影</div>
+    </div>
+
+    <div class="reveal gal-cap" style="margin-top:14px">操场 · 湖边 · 栈道，走到哪里聊到哪里</div>
+  </section>
+
+  <!-- ================= 6 往期回顾 · 快乐瞬间 ================= -->
+  <section class="page" data-title="往期回顾 · 瞬间">
+    <div class="floaties">
+      <i style="left:10%;top:14%;font-size:20px;color:#ffe9a8">★</i>
+      <i style="left:87%;top:12%;font-size:15px;color:#ffd76a;animation-delay:1.4s">★</i>
+      <i style="left:8%;top:86%;font-size:14px;color:#dfeaff;animation-delay:.9s">✦</i>
+    </div>
+
+    <div class="reveal" style="text-align:center;margin-bottom:16px">
+      <div class="eyebrow">Throwback · 03</div>
+      <h2 class="h-cn">这些快乐瞬间</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="reveal strip">
+        <figure class="fr a">
+          <div class="win"><img src="photos/ec-03-break.jpg" alt="英语角茶歇时间" loading="lazy"></div>
+          <span class="no">03</span>
+          <figcaption class="mini">中场小食光</figcaption>
+        </figure>
+        <figure class="fr b">
+          <div class="win"><img src="photos/ec-06-room.jpg" alt="英语角课堂" loading="lazy"></div>
+          <span class="no">06</span>
+          <figcaption class="mini">课堂里的我们</figcaption>
+        </figure>
+        <figure class="fr c">
+          <div class="win"><img src="photos/ec-05-seats.jpg" alt="英语角合影" loading="lazy"></div>
+          <span class="no">05</span>
+          <figcaption class="mini">座位上的欢笑</figcaption>
+        </figure>
+    </div>
+
+    <div class="reveal gal-cap" style="margin-top:18px">We are waiting for you</div>
+    <div class="reveal script" style="margin-top:10px;font-size:clamp(24px,8vw,34px)">English Corner</div>
+  </section>
+
+  <!-- ================= 7 活动准备 ================= -->
+  <section class="page" data-title="活动准备">
+    <div class="floaties">
+      <i style="left:10%;top:18%;font-size:15px;color:#ffd76a">★</i>
+      <i style="left:87%;top:14%;font-size:19px;color:#dfeaff;animation-delay:1.2s">★</i>
+      <i style="left:14%;top:78%;font-size:17px;color:#ffe9a8;animation-delay:.8s">✦</i>
+    </div>
+
+    <div class="reveal" style="text-align:center;margin-bottom:6px">
+      <h2 class="h-cn" style="font-size:clamp(32px,11vw,48px)">活动准备</h2>
+      <div class="rule"></div>
+    </div>
+
+    <p class="lead reveal">宝子们！咱们的英语角要开张啦🥳 为了玩得开心、学得尽兴，朕有几道“圣旨”要念：</p>
+
+    <div class="tips reveal" style="width:100%;max-width:520px">
+      <div class="tip">
+        <div class="ico">1</div>
+        <div><div class="tt">带着开心来</div><div class="td">把瞌睡虫赶跑，带着满格电量来赴约～</div></div>
+      </div>
+      <div class="tip">
+        <div class="ico">2</div>
+        <div><div class="tt">大胆开口别害羞</div><div class="td">说错也没关系，敢说就是胜利，越唠越流利✨</div></div>
+      </div>
+      <div class="tip">
+        <div class="ico">3</div>
+        <div><div class="tt">时间地点</div><div class="td">详见群内通知，记得提前 5 分钟蹲好，别迟到哦～</div></div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:20px;font-size:14.5px;color:#dbe7ff;letter-spacing:.1em">期待大家的到来！</div>
+  </section>
+
+  <!-- ================= 8 结尾 ================= -->
+  <section class="page final" data-title="期待你的到来">
+    <div class="floaties">
+      <i style="left:8%;top:20%;font-size:22px;color:#ffd76a">★</i>
+      <i style="left:88%;top:26%;font-size:16px;color:#ffe9a8;animation-delay:1.4s">★</i>
+      <i style="left:20%;top:66%;font-size:14px;color:#dfeaff;animation-delay:.6s">✦</i>
+      <i style="left:80%;top:70%;font-size:19px;color:#ffd76a;animation-delay:1.9s">★</i>
+      <i style="left:48%;top:10%;font-size:13px;color:#ffe9a8;animation-delay:1.1s">✦</i>
+    </div>
+
+    <div class="reveal script big">Welcome!</div>
+    <div class="reveal cn">欢迎你的到来</div>
+    <div class="reveal script script2">Have a good time</div>
+    <div class="reveal rule" style="margin-top:18px"></div>
+    <div class="reveal small">理工英语角 · 期待与你相遇</div>
+
+    <div class="swipe-hint" style="position:static;transform:none;animation:bob3 2.1s ease-in-out infinite;margin-top:34px">
+      <span>长按 / 右上角 · 分享给伙伴</span>
+    </div>
+
+    <div class="gifts" aria-hidden="true">
+      <div class="gift" style="animation-delay:.05s">
+        <svg viewBox="0 0 100 120"><rect x="8" y="46" width="84" height="66" rx="6" fill="#5ad0d0"/><rect x="8" y="46" width="84" height="14" fill="#39b9bd"/><rect x="44" y="46" width="12" height="66" fill="#ff8fa8"/><path d="M50 46c-14-6-24-14-18-24 5-8 16-4 18 8 2-12 13-16 18-8 6 10-4 18-18 24z" fill="#ff8fa8"/></svg>
+      </div>
+      <div class="gift" style="animation-delay:.2s">
+        <svg viewBox="0 0 100 120"><rect x="8" y="52" width="84" height="60" rx="6" fill="#cfe04a"/><rect x="8" y="52" width="84" height="13" fill="#b3c53a"/><rect x="44" y="52" width="12" height="60" fill="#ff8fb0"/><path d="M50 52c-13-6-22-13-17-22 5-8 15-4 17 7 2-11 12-15 17-7 5 9-4 16-17 22z" fill="#ff8fb0"/></svg>
+      </div>
+      <div class="gift" style="animation-delay:.35s">
+        <svg viewBox="0 0 100 120"><rect x="8" y="50" width="84" height="62" rx="6" fill="#a8e6ff"/><rect x="8" y="50" width="84" height="14" fill="#7fd4f7"/><rect x="44" y="50" width="12" height="62" fill="#ff9a6b"/><path d="M50 50c-14-6-24-14-18-23 5-8 16-4 18 8 2-12 13-16 18-8 6 9-4 17-18 23z" fill="#ff9a6b"/></svg>
+      </div>
+      <div class="gift" style="animation-delay:.5s">
+        <svg viewBox="0 0 100 120"><rect x="8" y="54" width="84" height="58" rx="6" fill="#c9e07a"/><rect x="8" y="54" width="84" height="13" fill="#aecb52"/><rect x="44" y="54" width="12" height="58" fill="#ffcf5c"/><path d="M50 54c-13-6-22-13-17-21 5-8 15-4 17 7 2-11 12-15 17-7 5 8-4 15-17 21z" fill="#ffcf5c"/></svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 右侧进度点 -->
+<nav class="nav-dots" id="dots" aria-label="页面导航"></nav>
+
+<!-- 分享引导 -->
+<div class="share-tip" id="shareTip">
+  <div class="arrow">↗</div>
+  <h3>分享给小伙伴</h3>
+  <p>点击右上角「···」<br>发送给朋友 / 分享到朋友圈</p>
+  <button class="close" id="shareClose">知道啦</button>
+</div>
+
+
+<script src="config.js"></script>
+<script>
+(function(){
+  'use strict';
+  var CFG = window.EC_CONFIG || {};
+
+  /* ---------- 顶部栏开关 ---------- */
+  if (CFG.showWechatShell === false) {
+    document.body.className = 'hide-cn-chrome';
+  }
+
+  /* ---------- 页面导航 ---------- */
+  var pages = Array.prototype.slice.call(document.querySelectorAll('.page'));
+  var dots = document.getElementById('dots');
+  var current = 0;
+
+  pages.forEach(function(p, i){
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', '第 ' + (i+1) + ' 页');
+    b.addEventListener('click', function(){ goTo(i); });
+    dots.appendChild(b);
+  });
+  var dotEls = Array.prototype.slice.call(dots.children);
+
+  function paint(i){
+    current = i;
+    dotEls.forEach(function(d, k){ d.classList.toggle('on', k === i); });
+    var t = pages[i].getAttribute('data-title');
+    var titleEl = document.querySelector('.cn-title');
+    if (titleEl && t) titleEl.innerHTML = t + '<small>v.qijiw.cn</small>';
+  }
+
+  /* 用原生滚动 + scroll-snap，手指滑动最顺滑 */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      var i = pages.indexOf(e.target);
+      e.target.classList.toggle('active', e.isIntersecting);
+      if (e.isIntersecting && e.intersectionRatio > 0.55) paint(i);
+    });
+  }, { threshold: [0, 0.55, 1], root: document.getElementById('pages') });
+  pages.forEach(function(p){ io.observe(p); });
+
+  var scrolling = false, timer = null;
+  function goTo(i){
+    i = Math.max(0, Math.min(pages.length - 1, i));
+    if (i === current) return;
+    scrolling = true;
+    clearTimeout(timer);
+    pages[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    paint(i);
+    timer = setTimeout(function(){ scrolling = false; }, 760);
+    hideSwipeHint();
+    if (i === pages.length - 1) showShareTip();
+  }
+
+  /* 鼠标滚轮 / 触控板：一滚一页 */
+  var wheelLock = 0;
+  window.addEventListener('wheel', function(e){
+    if (CFG.swipeToTurn === false || e.ctrlKey) return;
+    var now = Date.now();
+    if (now - wheelLock < 820) { e.preventDefault(); return; }
+    if (Math.abs(e.deltaY) < 12) return;
+    e.preventDefault();
+    wheelLock = now;
+    goTo(current + (e.deltaY > 0 ? 1 : -1));
+  }, { passive: false });
+
+  /* 键盘：上下翻页（方便电脑上预览） */
+  window.addEventListener('keydown', function(e){
+    if (['ArrowDown','PageDown',' '].indexOf(e.key) >= 0) { e.preventDefault(); goTo(current + 1); }
+    if (['ArrowUp','PageUp'].indexOf(e.key) >= 0) { e.preventDefault(); goTo(current - 1); }
+  });
+
+  /* 首次进入的“上滑”提示 */
+  function hideSwipeHint(){
+    var h = document.getElementById('swipeHint');
+    if (h) h.style.opacity = '0';
+  }
+  window.addEventListener('touchstart', hideSwipeHint, { once: true, passive: true });
+
+  /* 点分享：只在微信/QQ里显示引导 */
+  var ua = navigator.userAgent.toLowerCase();
+  var inApp = /micromessenger|qq\//.test(ua);
+  var shareShown = false;
+  function showShareTip(){
+    if (shareShown || localStorage.getItem('ec_share_tip') === '1') return;
+    shareShown = true;
+    document.getElementById('shareTip').classList.add('show');
+  }
+  document.getElementById('shareClose').addEventListener('click', function(){
+    document.getElementById('shareTip').classList.remove('show');
+    try { localStorage.setItem('ec_share_tip', '1'); } catch (err) {}
+  });
+  window.addEventListener('ec-share', showShareTip);
+  if (inApp) document.addEventListener('WeixinJSBridgeReady', function(){ inApp = true; }, false);
+
+  /* ---------- 背景音乐 ---------- */
+  var BTN = document.getElementById('musicBtn');
+  var audio = null, audioReady = false, wantPlay = CFG.autoplayMusic !== false;
+
+  function markPlaying(on){
+    BTN.classList.toggle('playing', !!on);
+    BTN.setAttribute('aria-label', on ? '暂停背景音乐' : '播放背景音乐');
+  }
+
+  function buildAudio(){
+    if (audio) return audio;
+    audio = new Audio();
+    audio.loop = CFG.loopMusic === true;      // 整首曲子放完就停，不循环
+    audio.preload = 'auto';
+    audio.setAttribute('playsinline', '');
+    audio.volume = typeof CFG.musicVolume === 'number' ? CFG.musicVolume : 0.55;
+    if (CFG.musicUrl) audio.src = CFG.musicUrl;
+    else if (window.EC_MUSIC_DATA) audio.src = window.EC_MUSIC_DATA;
+    audio.addEventListener('playing', function(){ markPlaying(true); });
+    audio.addEventListener('pause', function(){ markPlaying(false); });
+    audio.addEventListener('ended', function(){ markPlaying(false); });
+    audio.addEventListener('error', function(){
+      markPlaying(false);
+      BTN.style.display = 'none';             // 音频加载失败就别留着一个点不动的按钮
+    });
+    return audio;
+  }
+
+  function playMusic(){
+    var a = buildAudio();
+    if (!a.src) return;                    // 没有音频（config 里关了）就不显示音符
+    if (a.ended) a.currentTime = 0;        // 放完之后再点，从头开始
+    var p = a.play();
+    if (p && p.catch) p.catch(function(){ markPlaying(false); });
+  }
+  function toggleMusic(){
+    var a = buildAudio();
+    if (!a.src) return;
+    if (a.paused) playMusic(); else a.pause();
+  }
+  BTN.addEventListener('click', function(e){ e.stopPropagation(); toggleMusic(); });
+
+  /* 音频准备好后再显示音乐按钮，避免点了没反应 */
+  var probe = buildAudio();
+  if (probe.src) {
+    markPlaying(false);
+  } else {
+    BTN.style.display = 'none';
+  }
+
+  /* 自动播放：先尝试静音自动起播，成功则取消静音；失败则等第一次触摸 */
+  function tryAutoplay(){
+    var a = buildAudio();
+    if (!a.src || !wantPlay) return;
+    a.muted = true;
+    var p = a.play();
+    if (p && p.then) {
+      p.then(function(){
+        a.muted = false;
+        if (a.paused) return;
+        markPlaying(true);
+      }).catch(function(){
+        // 浏览器拦了自动播放：等用户第一次交互
+        ['touchstart','click','keydown'].forEach(function(ev){
+          window.addEventListener(ev, function once(){
+            window.removeEventListener(ev, once);
+            if (wantPlay && a.paused) playMusic();
+          }, { passive: true });
+        });
+      });
+    }
+  }
+
+  window.addEventListener('load', function(){
+    paint(0);
+    setTimeout(tryAutoplay, 260);
+    /* 支持 #p3 这样的深链接直接跳到某一页（也方便截图检查） */
+    var m = /^#p(\d+)$/.exec(location.hash || '');
+    if (m) {
+      var idx = Math.min(pages.length - 1, Math.max(0, parseInt(m[1], 10) - 1));
+      setTimeout(function(){ pages[idx].scrollIntoView({ block: 'start' }); paint(idx); }, 60);
+    }
+  });
+
+  /* 页面隐藏时暂停，回来继续 */
+  document.addEventListener('visibilitychange', function(){
+    var a = audio;
+    if (!a || !a.src) return;
+    if (document.hidden) { if (!a.paused) { a.pause(); a.dataset.wasPlaying = '1'; } }
+    else if (a.dataset.wasPlaying === '1') { playMusic(); delete a.dataset.wasPlaying; }
+  });
+})();
+</script>
+</body>
+</html>
